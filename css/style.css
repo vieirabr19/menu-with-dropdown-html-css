@@ -90,7 +90,7 @@ aside ul li > ul li {
   cursor: pointer;
 }
 /* target */
-aside ul li > ul li a,
+/* aside ul li > ul li a,
 aside ul li:target > ul li a {
   background: transparent;
 }
@@ -111,5 +111,30 @@ aside ul li:target a i.fa-angle-right {
   top: 10px;
 }
 aside ul li:target:hover {
+  background: initial;
+} */
+
+/* active class */
+aside ul li > ul li a,
+aside ul li.active > ul li a {
+  background: transparent;
+}
+aside ul li.active {
+  max-height: 500px;
+  border-radius: 5px 0 0 5px;
+}
+aside ul li.active a {
+  color: #444;
+  display: inherit;
+  background: white;
+}
+aside ul li.active a + ul li a {
+  color: white;
+}
+aside ul li.active a i.fa-angle-right {
+  transform: rotate(90deg);
+  top: 10px;
+}
+aside ul li.active:hover {
   background: initial;
 }
